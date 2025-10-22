@@ -2,11 +2,9 @@ import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Image } from 'expo-image';
 import { ScrollView, StyleSheet } from 'react-native';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { typography } from "./styles";
 
 export default function Index() {
-  const { top, bottom } = useSafeAreaInsets()
 
   return (
     <ScrollView style={[styles.container, { paddingBottom: 20}]}>
